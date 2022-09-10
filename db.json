@@ -1,9 +1,14 @@
 {
   "tasks": [
     {
-      "text": "sfe",
-      "day": "fef",
+      "text": "Innovision 2k22",
+      "day": "8th sept 2k22",
       "id": 1
+    },
+    {
+      "text": "Baler hackathon ",
+      "day": "10 th sept 3:00pm",
+      "id": 2
     }
   ]
 }

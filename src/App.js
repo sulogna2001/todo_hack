@@ -8,7 +8,7 @@ const App = () => {
   const [tasks, setTasks] = useState([]);
   
   const loadData= async ()=>{
-    const response=await fetch('http://localhost:3000/tasks')
+    const response=await fetch('http://localhost:5000/tasks')
     const data=await response.json()
     return data;
 
@@ -26,7 +26,7 @@ const App = () => {
     // const id= uuidv4();
     // const newTask={id,...task}
     // setTasks([...tasks, newTask])
-    const res=await fetch('http://localhost:3000/tasks',{
+    const res=await fetch('http://localhost:5000/tasks',{
       method:'POST',
       headers:{
         'Content-type':'application/json'
@@ -44,7 +44,7 @@ const App = () => {
   const deleteTask = async (id) => {
     // console.log('delete',id);
 
-    await fetch(`http://localhost:3000/tasks/${id}`,{
+    await fetch(`http://localhost:5000/tasks/${id}`,{
       method:'DELETE',
     })
     setTasks(tasks.filter((task) => 
